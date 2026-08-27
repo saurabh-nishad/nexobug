@@ -1,0 +1,36 @@
+# Claude Code
+.claude/
+CLAUDE.local.md
+
+# Docusaurus (docs/)
+docs/node_modules/
+docs/build/
+docs/.docusaurus/
+docs/.cache-loader/
+
+# Dependencies
+node_modules/
+
+# Build output
+build/
+dist/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

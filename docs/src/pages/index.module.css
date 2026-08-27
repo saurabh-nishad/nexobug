@@ -1,0 +1,237 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0;
+  background: radial-gradient(
+      circle at 15% 20%,
+      var(--nb-teal-glow) 0%,
+      transparent 45%
+    ),
+    linear-gradient(160deg, var(--nb-navy-900) 0%, var(--nb-navy-700) 100%);
+  color: #f5f7fa;
+}
+
+.heroInner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.heroCopy {
+  flex: 1 1 480px;
+}
+
+.heroMedia {
+  flex: 1 1 420px;
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage {
+  max-width: 100%;
+  border-radius: var(--nb-radius-lg);
+  box-shadow: var(--nb-shadow-card-hover);
+}
+
+.heroKicker {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary-lighter);
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.heroSubtitle {
+  font-size: 1.15rem;
+  color: rgba(245, 247, 250, 0.8);
+  max-width: 42ch;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+
+.badge {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(245, 247, 250, 0.9);
+}
+
+@media screen and (max-width: 996px) {
+  .hero {
+    padding: 3rem 0;
+  }
+  .heroInner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .heroSubtitle {
+    max-width: none;
+  }
+  .buttons,
+  .badgeRow {
+    justify-content: center;
+  }
+}
+
+/* ---------- Shared section heading ---------- */
+
+.sectionHeading {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 3rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- How It Works ---------- */
+
+.howItWorks {
+  padding: 5rem 0;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.stepCard {
+  height: 100%;
+  padding: 2rem 1.75rem;
+  border-radius: var(--nb-radius-lg);
+  background: var(--ifm-background-surface-color);
+  box-shadow: var(--nb-shadow-card);
+  margin-bottom: 1.5rem;
+}
+
+.stepNumber {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.75rem;
+}
+
+/* ---------- Use cases ---------- */
+
+.useCases {
+  padding: 5rem 0;
+  width: 100%;
+}
+
+.useCaseCard {
+  height: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: var(--nb-radius-lg);
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+  box-shadow: var(--nb-shadow-card);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.useCaseCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--nb-shadow-card-hover);
+}
+
+.useCaseImageWrap {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+
+.useCaseImageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease;
+}
+
+.useCaseCard:hover .useCaseImageWrap img {
+  transform: scale(1.06);
+}
+
+.useCaseTag {
+  position: absolute;
+  top: 0.9rem;
+  left: 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(11, 17, 32, 0.75);
+  color: #fff;
+}
+
+.useCaseBody {
+  padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.useCaseBody p {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0;
+}
+
+/* ---------- CTA banner ---------- */
+
+.ctaBanner {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--nb-navy-900) 0%, var(--nb-navy-700) 100%);
+  color: #f5f7fa;
+}
+
+.ctaInner {
+  text-align: center;
+  max-width: 640px;
+}
+
+.ctaInner h2 {
+  color: #fff;
+}
+
+.ctaInner p {
+  color: rgba(245, 247, 250, 0.8);
+  margin-bottom: 2rem;
+}
+
+.ctaInner .buttons {
+  justify-content: center;
+}
