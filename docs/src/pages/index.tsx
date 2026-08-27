@@ -37,7 +37,7 @@ function HomepageHeader() {
             </Link>
             <Link
               className="button button--secondary button--lg"
-              to="https://github.com/your-org/NexoBug">
+              to="https://github.com/nexotron-infotech/nexobug">
               View on GitHub
             </Link>
           </div>
@@ -189,7 +189,7 @@ function CtaBanner() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="https://github.com/your-org/NexoBug">
+            to="https://github.com/nexotron-infotech/nexobug">
             View on GitHub
           </Link>
         </div>

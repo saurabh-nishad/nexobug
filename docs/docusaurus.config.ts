@@ -14,16 +14,15 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // TODO: update once the GitHub repo exists.
   // Set the production url of your site here
-  url: 'https://your-org.github.io',
+  url: 'https://nexotron-infotech.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/NexoBug/',
+  baseUrl: '/nexobug/',
 
   // GitHub pages deployment config.
-  organizationName: 'your-org', // TODO: set to the real GitHub org/user name.
-  projectName: 'NexoBug', // TODO: set to the real repo name if different.
+  organizationName: 'nexotron-infotech',
+  projectName: 'nexobug',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -43,8 +42,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // TODO: update once the GitHub repo exists.
-          editUrl: 'https://github.com/your-org/NexoBug/tree/main/docs/',
+          editUrl: 'https://github.com/nexotron-infotech/nexobug/tree/master/docs/',
         },
         blog: false,
         theme: {
@@ -86,7 +84,7 @@ const config: Config = {
           label: 'Developer API',
         },
         {
-          href: 'https://github.com/your-org/NexoBug',
+          href: 'https://github.com/nexotron-infotech/nexobug',
           label: 'GitHub',
           position: 'right',
         },
@@ -108,7 +106,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/your-org/NexoBug',
+              href: 'https://github.com/nexotron-infotech/nexobug',
             },
           ],
         },
